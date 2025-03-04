@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://rodger.global-linguist.com/webgl/ch02/HelloPoint1.html -->
+<html lang="en">
+  
+  <head>
+    <meta charset = "utf-8"/>
+    <title>Change a point Color</title>
+    <style>
+
+    </style>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="800" height="600" style="display: block; margin: auto;">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <!-- <img src="mcpig.webp" alt="Shield" width="715"> -->
+     <p>
+    <button type="button" id="normalOn">Normal On</button>
+    <button type="button" id="normalOff">Normal Off</button>
+    <p>
+      <button type="button" id="lightOn">Light On</button>
+      <button type="button" id="lightOff">Light Off</button>
+    <p>
+      Light X <input type="range", min="-350" max="350" value="0" class="slider" id="lightSlideX">
+      Light Y <input type="range", min="-350" max="350" value="350" class="slider" id="lightSlideY">
+      Light Z <input type="range", min="-350" max="350" value="200" class="slider" id="lightSlideZ">
+    </p>
+    <p id="numdot"> XXX </p>
+    <p>
+      <p>
+        Select map size to start
+      <p>
+        WASD to move around, left click to break floor block, right click to place them back
+        <p>
+        Click on the canvas to move camera and escape to get mouse back
+        <p>
+          If you walk over the edge you will fall down and eventually respawn again on the platform
+        <p>
+          Falling into a space where a block was deleted is a little buggy and you need to refresh
+        <p>
+          Placing and deleting blocks only works with the floor level blocks.
+      </p>
+        Map Size
+      <button type="button" id="8x8Button">8x8</button>
+      <button type="button" id="32x32Button">32x32</button>
+      <p>
+        Jump works incorrectly when walking towards an edge after clicking spacebar
+
+
+
+    <script src="./asg1_files/webgl-utils.js.download"></script>
+    <script src="./asg1_files/webgl-debug.js.download"></script>
+    <script src="./asg1_files/cuon-utils.js.download"></script>
+    <script src="./asg1_files/HelloPoint1.js.download"></script>
+    <script src="point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="World.js"></script>
+    
+    <script src="cuon-matrix-cse160.js"></script>
+    <script src="Camera.js"></script>
+  
+
+</body>
+</html>
